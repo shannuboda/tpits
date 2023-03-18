@@ -1,0 +1,26 @@
+<p id="demo">Click on "Try it". I will display when two, four, and six seconds have passed.</p>
+                    <img src="D:/rupesh/test/image1/onelane.png">
+
+
+    <script>
+function timedText() {
+  setTimeout(myTimeout1, 20000)
+  setTimeout(myTimeout2, 4000)
+  setTimeout(myTimeout3, 6000)
+  setTimeout(myTimeout4, 10000)
+}
+var c=values;
+
+function myTimeout1() {
+  document.getElementById("demo").innerHTML = "4th image first green signal and remaining images are in red symbol for 5mins";
+}
+function myTimeout2() {
+  document.getElementById("demo").innerHTML = "6th image first green signal and remaining images are in red symbol for 5mins";
+}
+function myTimeout3() {
+  document.getElementById("demo").innerHTML = "7th image first green signal and remaining images are in red symbol for 5mins";
+}
+function myTimeout4() {
+  document.getElementById("demo").innerHTML = "4th image first green signal and remaining images are in red symbol for 5mins";
+}
+</script>

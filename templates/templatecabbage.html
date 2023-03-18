@@ -1,0 +1,25 @@
+
+
+
+	<img src="cabbageimages/" id='img_src' >
+  <div style="" id="img_val"></div> <div style="" id="img_vale"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+var g = window.location.href ;
+var res = g.split("?");
+var res1 = res['1'].split("=");
+
+var img = res1['1'].split("__");
+$('#img_src').attr('src', img[0]);
+var rr = "Status Of The Disease :"+img[1].replace(/%20/g, " ");
+var rrr = "Pestisides: "+img[2].replace(/%20/g, " ");
+$('#img_val').text(rr);
+
+$('#img_vale').text(rrr);
+
+  
+});
+</script>
+

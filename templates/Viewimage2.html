@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Valera bootstrap 3 one page template</title>
+    <!-- css -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="static/css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="static/css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="static/css/owl.carousel.css" rel="stylesheet" media="screen" />
+    <link href="static/css/owl.theme.css" rel="stylesheet" media="screen" />
+	<link href="static/css/flexslider.css" rel="stylesheet" />
+	<link href="static/css/animate.css" rel="stylesheet" />
+    <link href="static/css/style.css" rel="stylesheet">
+	<link href="static/color/default.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom" >
+    <div id="navigation">
+        <nav class="navbar navbar-custom" role="navigation">
+                              <div class="container">
+                                    <div class="row">
+                                          <div class="col-md-2 mob-logo">
+                                                <div class="row">
+                                                      <div class="site-logo">
+                                                            <h2>YOLO</h2>
+                                                      </div>
+                                                </div>
+                                          </div>
+
+
+                                          <div class="col-md-10 mob-menu">
+                                                <div class="row">
+                                                      <!-- Brand and toggle get grouped for better mobile display -->
+                                          <div class="navbar-header">
+                                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                                                <i class="fa fa-bars"></i>
+                                                </button>
+                                          </div>
+
+                                                      <div class="collapse navbar-collapse" id="menu">
+                                                            <ul class="nav navbar-nav navbar-right">
+                                                                  <li class="active"><a href="/">Home</a></li>
+																   <li><a href="{{url_for('upload1')}}">Upload Images</a></li>
+																  <li class="dropdown nav-toggle">
+                                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">View Images<b class="caret"></b></a>
+                                                                        <ul class="dropdown-menu">
+                                                                             <li><a class="external" href="{{url_for('Viewimage1')}}">View First uploaded image</a></li>
+                                                                               <li><a class="external" href="{{url_for('Viewimage2')}}">View second uploaded image</a></li>
+                                                                               <li><a class="external" href="{{url_for('Viewimage3')}}">View third uploaded image</a></li>
+                                                                               <li><a class="external" href="{{url_for('Viewimage4')}}">View fourth uploaded image</a>
+                                                                        </ul>
+																   <li><a href="{{url_for('xjunction')}}">View Traffic Flow</a></li>
+
+                                                                  </li>
+                                                            </ul>
+                                                      </div>
+                                                      <!-- /.Navbar-collapse -->
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <!-- /.container -->
+                        </nav>
+    </div>
+    <!-- /Navigation -->
+
+	<!-- Section: about -->
+    <section id="about" class="home-section color-dark bg-white">
+        <div align="center">
+                   <h1 style="padding-right:175px">Second uploaded image</h1>
+                            <h1>Vehicles Count in the Second image{{l2}}</h1>
+
+            </div>
+
+            <img src="static/img/team/{{image2}}"style="width: 821px;height: 312px;padding-left: 312px;" id="img_src">
+
+		<div class="container marginbot-50">
+
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+                        <div class="section-heading text-center"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="text-center">
+		<div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-3 col-md-3">
+				<div class="team-wrapper-big wow bounceInUp" data-wow-delay="0.2s">
+                        <div class="team-wrapper-overlay">
+<!--                          <h5>Green signal</h5>-->
+<!--                          <p>Green signal defines the traffic for the uploaded image is High. </p>-->
+                          <div class="social-icons">
+
+                          </div>
+                        </div>
+                        <img src="static/img/team/index.jpg" alt="" style="
+    height: 210px;
+    width: 188px;
+">
+                </div>
+            </div>
+
+			<div class="col-xs-6 col-sm-3 col-md-3">
+				<div class="team-wrapper-big wow bounceInUp" data-wow-delay="0.5s">
+                        <div class="team-wrapper-overlay">
+
+                          <div class="social-icons">
+                          </div>
+                        </div>
+                        <img src="static/img/team/index3.jpg" alt=""  style="
+    height: 210px;
+    width: 188px;
+">
+                </div>
+            </div>
+			<div class="col-xs-6 col-sm-3 col-md-3">
+				<div class="team-wrapper-big wow bounceInUp" data-wow-delay="0.8s">
+                        <div class="team-wrapper-overlay">
+
+                        </div>
+                        <img src="static/img/team/veh.jfif" alt=""  style="
+    height: 210px;
+    width: 188px;"/>
+                </div>
+            </div>
+			<div class="col-xs-6 col-sm-3 col-md-3">
+				<div class="team-wrapper-big wow bounceInUp" data-wow-delay="1s">
+                        <div class="team-wrapper-overlay">
+
+                        </div>
+                        <img src="static/img/team/light.jfif" alt="" style="height: 210px; width: 188px;"/>
+                </div>
+            </div>
+        </div>
+		</div>
+		</div>
+	</section>
+	<!-- /Section: about -->
+
+<!--	&lt;!&ndash;-->
+	<!-- /google map -->
+
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+
+					<div class="text-center">
+						<a href="#intro" class="totop"><i class="pe-7s-angle-up pe-3x"></i></a>
+
+						<div class="social-widget">
+
+
+							<ul class="team-social">
+									<li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li class="social-google"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li class="social-dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+							</ul>
+
+						</div>
+						<p>By using YOLOV3 model We can detect the vehicles count.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+var g = window.location.href ;
+var res = g.split("?");
+var res1 = res['1'].split("=");
+
+var img = res1['1'].split("__");
+$('#img_src').attr('src', img[0]);
+var rr = "Status Of The Disease :"+img[1].replace(/%20/g, " ");
+var rrr = "Pestisides: "+img[2].replace(/%20/g, " ");
+$('#img_val').text(rr);
+
+$('#img_vale').text(rrr);
+
+
+});
+</script>
+    <!-- Core JavaScript Files -->
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="static/js/jquery.sticky.js"></script>
+	<script src="static/js/slippry.min.js"></script>
+	<script src="static/js/jquery.flexslider-min.js"></script>
+	<script src="static/js/morphext.min.js"></script>
+	<script src="static/js/gmap.js"></script>
+	<script src="static/js/jquery.mb.YTPlayer.js"></script>
+    <script src="static/js/jquery.easing.min.js"></script>
+	<script src="static/js/jquery.scrollTo.js"></script>
+	<script src="static/js/jquery.appear.js"></script>
+	<script src="static/js/stellar.js"></script>
+	<script src="static/js/wow.min.js"></script>
+	<script src="static/js/owl.carousel.min.js"></script>
+	<script src="static/js/nivo-lightbox.min.js"></script>
+	<script src="static/js/jquery.nicescroll.min.js"></script>
+    <script src="static/js/custom.js"></script>
+</body>
+
+</html>
